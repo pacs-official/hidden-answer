@@ -1,0 +1,9 @@
+[workspace]
+members = ["./crates/*"]
+
+[workspace.dependencies]
+serde = { version = "1.0.144", features = ["derive"] } # A generic serialization/deserialization framework 
+toml = "0.5.9" # Encoder and decoder of TOML-formatted files and streams
+rusqlite = { version = "0.28.0", features = ["bundled", "chrono"]} #  Ergonomic wrapper for SQLite
+blake3 = "1.3.3" # A fast cryptographic hash function that is
+Chrono = { version = "0.4.23", features = ["serde"]} # Date and time library
